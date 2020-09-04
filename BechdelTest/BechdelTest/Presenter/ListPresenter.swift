@@ -90,16 +90,17 @@ class ListPresenter {
     }
     
     func getBy(name: String?, on list: [Movie]) -> [Movie] {
+        guard let n = name?.lowercased() else { return list }
+        guard n != "" else { return list }
+        
         var movies: [Movie] = list
         
         var remove: [Int] = []
         
-        if let n = name?.lowercased() {
-            for i in 0..<movies.count {
-                if let title = movies[i].title?.lowercased() {
-                    if !title.contains(n) {
-                        remove.insert(i, at: 0)
-                    }
+        for i in 0..<movies.count {
+            if let title = movies[i].title?.lowercased() {
+                if !title.contains(n) {
+                    remove.insert(i, at: 0)
                 }
             }
         }
