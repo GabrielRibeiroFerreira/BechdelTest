@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ezC-3e-KP5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bechdel Test-->
+        <scene sceneID="GvT-DT-5jB">
+            <objects>
+                <tableViewController id="tC4-xl-7zm" customClass="ListTableViewController" customModule="BechdelTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5j7-za-ckb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="tC4-xl-7zm" id="Bff-dY-hny"/>
+                            <outlet property="delegate" destination="tC4-xl-7zm" id="MZO-tS-el2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Bechdel Test" id="Hbm-ac-Qin">
+                        <barButtonItem key="rightBarButtonItem" title="Filter" id="94Q-BT-ycq">
+                            <connections>
+                                <segue destination="hr3-dN-hvp" kind="presentation" identifier="toFilterSegue" modalPresentationStyle="fullScreen" id="a9f-ln-7Xd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="av4-U6-FCW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="545" y="114"/>
+        </scene>
+        <!--Filter View Controller-->
+        <scene sceneID="gSG-7g-Ipc">
+            <objects>
+                <viewController id="hr3-dN-hvp" customClass="FilterViewController" customModule="BechdelTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jTf-Ue-Z3K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVw-XK-wdd">
+                                <rect key="frame" x="0.0" y="90" width="414" height="772"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhr-YV-vxl">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="588"/>
+                                        <subviews>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qdb-Sf-tOC">
+                                                <rect key="frame" x="0.0" y="16" width="414" height="180"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="180" id="EjF-c5-Zmp"/>
+                                                </constraints>
+                                            </pickerView>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfu-L0-NRl">
+                                                <rect key="frame" x="0.0" y="204" width="414" height="180"/>
+                                            </pickerView>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuY-Pe-VEA">
+                                                <rect key="frame" x="0.0" y="392" width="414" height="180"/>
+                                            </pickerView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="wuY-Pe-VEA" firstAttribute="leading" secondItem="Uhr-YV-vxl" secondAttribute="leading" id="3FV-Cr-hwc"/>
+                                            <constraint firstItem="wuY-Pe-VEA" firstAttribute="top" secondItem="rfu-L0-NRl" secondAttribute="bottom" constant="8" id="42l-vj-eAE"/>
+                                            <constraint firstItem="wuY-Pe-VEA" firstAttribute="height" secondItem="Qdb-Sf-tOC" secondAttribute="height" id="96g-lK-Ixh"/>
+                                            <constraint firstAttribute="bottom" secondItem="wuY-Pe-VEA" secondAttribute="bottom" constant="16" id="EO5-9a-qyz"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qdb-Sf-tOC" secondAttribute="trailing" id="EUX-9e-txt"/>
+                                            <constraint firstItem="rfu-L0-NRl" firstAttribute="height" secondItem="Qdb-Sf-tOC" secondAttribute="height" id="FsI-29-QRD"/>
+                                            <constraint firstItem="rfu-L0-NRl" firstAttribute="top" secondItem="Qdb-Sf-tOC" secondAttribute="bottom" constant="8" id="VRG-1M-HRn"/>
+                                            <constraint firstAttribute="trailing" secondItem="rfu-L0-NRl" secondAttribute="trailing" id="Xl4-Rm-K8Y"/>
+                                            <constraint firstItem="Qdb-Sf-tOC" firstAttribute="top" secondItem="Uhr-YV-vxl" secondAttribute="top" constant="16" id="d0J-sr-9bU"/>
+                                            <constraint firstAttribute="trailing" secondItem="wuY-Pe-VEA" secondAttribute="trailing" id="djF-st-aYd"/>
+                                            <constraint firstItem="Qdb-Sf-tOC" firstAttribute="leading" secondItem="Uhr-YV-vxl" secondAttribute="leading" id="o1n-eb-mVm"/>
+                                            <constraint firstItem="rfu-L0-NRl" firstAttribute="leading" secondItem="Uhr-YV-vxl" secondAttribute="leading" id="qfs-Ah-v4r"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Uhr-YV-vxl" firstAttribute="height" secondItem="aEa-iq-zyW" secondAttribute="height" id="1ud-in-El3"/>
+                                    <constraint firstItem="Uhr-YV-vxl" firstAttribute="leading" secondItem="aEa-iq-zyW" secondAttribute="leading" id="3jL-2e-bmm"/>
+                                    <constraint firstItem="Uhr-YV-vxl" firstAttribute="width" secondItem="iVw-XK-wdd" secondAttribute="width" id="6DZ-dE-YjR"/>
+                                    <constraint firstItem="Uhr-YV-vxl" firstAttribute="top" secondItem="aEa-iq-zyW" secondAttribute="top" id="VvS-uJ-p5o"/>
+                                    <constraint firstItem="Uhr-YV-vxl" firstAttribute="trailing" secondItem="aEa-iq-zyW" secondAttribute="trailing" id="Yt6-sL-tox"/>
+                                    <constraint firstItem="Uhr-YV-vxl" firstAttribute="bottom" secondItem="aEa-iq-zyW" secondAttribute="bottom" id="u6T-7F-51o"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="aEa-iq-zyW"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="KuA-DE-YBa"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijc-wS-ifT">
+                                <rect key="frame" x="0.0" y="52" width="414" height="30"/>
+                                <state key="normal" title="Apply filter"/>
+                                <connections>
+                                    <action selector="applyFilter:" destination="hr3-dN-hvp" eventType="touchUpInside" id="MI0-kv-Ey0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iVw-XK-wdd" firstAttribute="leading" secondItem="alf-Pe-Vgx" secondAttribute="leading" id="2nO-UJ-6QL"/>
+                            <constraint firstItem="iVw-XK-wdd" firstAttribute="top" secondItem="Ijc-wS-ifT" secondAttribute="bottom" constant="8" id="6Ig-cN-Ddr"/>
+                            <constraint firstItem="alf-Pe-Vgx" firstAttribute="bottom" secondItem="iVw-XK-wdd" secondAttribute="bottom" id="Aj1-Fs-3vK"/>
+                            <constraint firstItem="Ijc-wS-ifT" firstAttribute="leading" secondItem="alf-Pe-Vgx" secondAttribute="leading" id="FW1-vG-OQa"/>
+                            <constraint firstItem="alf-Pe-Vgx" firstAttribute="trailing" secondItem="Ijc-wS-ifT" secondAttribute="trailing" id="SNw-Aq-Yh8"/>
+                            <constraint firstItem="Ijc-wS-ifT" firstAttribute="top" secondItem="alf-Pe-Vgx" secondAttribute="top" constant="8" id="V5c-a7-zbp"/>
+                            <constraint firstItem="alf-Pe-Vgx" firstAttribute="trailing" secondItem="iVw-XK-wdd" secondAttribute="trailing" id="tYR-5t-Agl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="alf-Pe-Vgx"/>
+                    </view>
+                    <connections>
+                        <outlet property="fromPicker" destination="Qdb-Sf-tOC" id="BZh-tc-Sd6"/>
+                        <outlet property="ratingPicker" destination="wuY-Pe-VEA" id="xQ8-ow-Vxf"/>
+                        <outlet property="toPicker" destination="rfu-L0-NRl" id="TG7-S5-z98"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dk2-7W-YLk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1586" y="113"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iXf-H2-Aol">
+            <objects>
+                <navigationController id="ezC-3e-KP5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="m95-28-pXa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tC4-xl-7zm" kind="relationship" relationship="rootViewController" id="qr5-kl-oyQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IDA-Ca-KCc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-375" y="113"/>
+        </scene>
+    </scenes>
+</document>

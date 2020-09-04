@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A7669AD2501DA7A00A2A27E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7669AC2501DA7A00A2A27E /* AppDelegate.swift */; };
+		2A7669AF2501DA7A00A2A27E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7669AE2501DA7A00A2A27E /* SceneDelegate.swift */; };
+		2A7669B42501DA7A00A2A27E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7669B22501DA7A00A2A27E /* Main.storyboard */; };
+		2A7669B62501DA7C00A2A27E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7669B52501DA7C00A2A27E /* Assets.xcassets */; };
+		2A7669B92501DA7C00A2A27E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7669B72501DA7C00A2A27E /* LaunchScreen.storyboard */; };
+		2A7669C42501DA7C00A2A27E /* BechdelTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7669C32501DA7C00A2A27E /* BechdelTestTests.swift */; };
+		2A7669D42501DC6700A2A27E /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7669D32501DC6700A2A27E /* ListTableViewController.swift */; };
+		2A7669D62501DC8600A2A27E /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7669D52501DC8600A2A27E /* Movie.swift */; };
+		2A7669D82501DD9C00A2A27E /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7669D72501DD9C00A2A27E /* Cache.swift */; };
+		2A7669DA2501DDDB00A2A27E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7669D92501DDDB00A2A27E /* Data.swift */; };
+		2A7669DC2501DEBA00A2A27E /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7669DB2501DEBA00A2A27E /* ListPresenter.swift */; };
+		2A7669DE2501DEF800A2A27E /* ConnectErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7669DD2501DEF800A2A27E /* ConnectErrors.swift */; };
+		2A7669E02501DF0900A2A27E /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7669DF2501DF0900A2A27E /* ServiceProtocol.swift */; };
+		2A7669E22501DF2600A2A27E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7669E12501DF2600A2A27E /* Service.swift */; };
+		2A7669E62501E40100A2A27E /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7669E42501E40100A2A27E /* ListTableViewCell.swift */; };
+		2A7669E72501E40100A2A27E /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7669E52501E40100A2A27E /* ListTableViewCell.xib */; };
+		2A7669EC2501FB9800A2A27E /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7669EB2501FB9800A2A27E /* FilterViewController.swift */; };
+		4A4DD6D47076F84B691908CF /* Pods_BechdelTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7284D0E6B3294CF4062194D1 /* Pods_BechdelTestTests.framework */; };
+		59207118395A5F2347A2B10F /* Pods_BechdelTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B9C6AB1537319F893D25DE2 /* Pods_BechdelTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A7669C02501DA7C00A2A27E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A7669A12501DA7A00A2A27E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A7669A82501DA7A00A2A27E;
+			remoteInfo = BechdelTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D8343328C70B17888221517 /* Pods-BechdelTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BechdelTestTests.release.xcconfig"; path = "Target Support Files/Pods-BechdelTestTests/Pods-BechdelTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A7669A92501DA7A00A2A27E /* BechdelTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BechdelTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A7669AC2501DA7A00A2A27E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A7669AE2501DA7A00A2A27E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2A7669B32501DA7A00A2A27E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A7669B52501DA7C00A2A27E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A7669B82501DA7C00A2A27E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A7669BA2501DA7C00A2A27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A7669BF2501DA7C00A2A27E /* BechdelTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BechdelTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A7669C32501DA7C00A2A27E /* BechdelTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BechdelTestTests.swift; sourceTree = "<group>"; };
+		2A7669C52501DA7C00A2A27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A7669D32501DC6700A2A27E /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		2A7669D52501DC8600A2A27E /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		2A7669D72501DD9C00A2A27E /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		2A7669D92501DDDB00A2A27E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		2A7669DB2501DEBA00A2A27E /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		2A7669DD2501DEF800A2A27E /* ConnectErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectErrors.swift; sourceTree = "<group>"; };
+		2A7669DF2501DF0900A2A27E /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		2A7669E12501DF2600A2A27E /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		2A7669E42501E40100A2A27E /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		2A7669E52501E40100A2A27E /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		2A7669EB2501FB9800A2A27E /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		687843C23AB56CA3C1D0B9FF /* Pods-BechdelTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BechdelTestTests.debug.xcconfig"; path = "Target Support Files/Pods-BechdelTestTests/Pods-BechdelTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7284D0E6B3294CF4062194D1 /* Pods_BechdelTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BechdelTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9C6AB1537319F893D25DE2 /* Pods_BechdelTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BechdelTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC29CB8868FD4C506B9ED47F /* Pods-BechdelTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BechdelTest.debug.xcconfig"; path = "Target Support Files/Pods-BechdelTest/Pods-BechdelTest.debug.xcconfig"; sourceTree = "<group>"; };
+		DCE98CE3E6EA0C171D037DC7 /* Pods-BechdelTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BechdelTest.release.xcconfig"; path = "Target Support Files/Pods-BechdelTest/Pods-BechdelTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A7669A62501DA7A00A2A27E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59207118395A5F2347A2B10F /* Pods_BechdelTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A7669BC2501DA7C00A2A27E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A4DD6D47076F84B691908CF /* Pods_BechdelTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A7669A02501DA7A00A2A27E = {
+			isa = PBXGroup;
+			children = (
+				2A7669AB2501DA7A00A2A27E /* BechdelTest */,
+				2A7669C22501DA7C00A2A27E /* BechdelTestTests */,
+				2A7669AA2501DA7A00A2A27E /* Products */,
+				844270C992B332A2E67CCAB7 /* Pods */,
+				81B0AF4C2C7EE51410F5FFDB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A7669AA2501DA7A00A2A27E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A7669A92501DA7A00A2A27E /* BechdelTest.app */,
+				2A7669BF2501DA7C00A2A27E /* BechdelTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A7669AB2501DA7A00A2A27E /* BechdelTest */ = {
+			isa = PBXGroup;
+			children = (
+				2A7669CE2501DB7B00A2A27E /* Service */,
+				2A7669D12501DB9B00A2A27E /* Model */,
+				2A7669D02501DB9100A2A27E /* Presenter */,
+				2A7669CF2501DB8500A2A27E /* View */,
+				2A7669B52501DA7C00A2A27E /* Assets.xcassets */,
+				2A7669B72501DA7C00A2A27E /* LaunchScreen.storyboard */,
+				2A7669BA2501DA7C00A2A27E /* Info.plist */,
+			);
+			path = BechdelTest;
+			sourceTree = "<group>";
+		};
+		2A7669C22501DA7C00A2A27E /* BechdelTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A7669C32501DA7C00A2A27E /* BechdelTestTests.swift */,
+				2A7669C52501DA7C00A2A27E /* Info.plist */,
+			);
+			path = BechdelTestTests;
+			sourceTree = "<group>";
+		};
+		2A7669CE2501DB7B00A2A27E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2A7669DD2501DEF800A2A27E /* ConnectErrors.swift */,
+				2A7669DF2501DF0900A2A27E /* ServiceProtocol.swift */,
+				2A7669E12501DF2600A2A27E /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2A7669CF2501DB8500A2A27E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A7669E32501E3D100A2A27E /* ListCell */,
+				2A7669EA2501FB8000A2A27E /* FilterView */,
+				2A7669D22501DBAD00A2A27E /* ListView */,
+				2A7669AC2501DA7A00A2A27E /* AppDelegate.swift */,
+				2A7669AE2501DA7A00A2A27E /* SceneDelegate.swift */,
+				2A7669B22501DA7A00A2A27E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A7669D02501DB9100A2A27E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2A7669DB2501DEBA00A2A27E /* ListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2A7669D12501DB9B00A2A27E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A7669D52501DC8600A2A27E /* Movie.swift */,
+				2A7669D72501DD9C00A2A27E /* Cache.swift */,
+				2A7669D92501DDDB00A2A27E /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A7669D22501DBAD00A2A27E /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				2A7669D32501DC6700A2A27E /* ListTableViewController.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		2A7669E32501E3D100A2A27E /* ListCell */ = {
+			isa = PBXGroup;
+			children = (
+				2A7669E42501E40100A2A27E /* ListTableViewCell.swift */,
+				2A7669E52501E40100A2A27E /* ListTableViewCell.xib */,
+			);
+			path = ListCell;
+			sourceTree = "<group>";
+		};
+		2A7669EA2501FB8000A2A27E /* FilterView */ = {
+			isa = PBXGroup;
+			children = (
+				2A7669EB2501FB9800A2A27E /* FilterViewController.swift */,
+			);
+			path = FilterView;
+			sourceTree = "<group>";
+		};
+		81B0AF4C2C7EE51410F5FFDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B9C6AB1537319F893D25DE2 /* Pods_BechdelTest.framework */,
+				7284D0E6B3294CF4062194D1 /* Pods_BechdelTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		844270C992B332A2E67CCAB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC29CB8868FD4C506B9ED47F /* Pods-BechdelTest.debug.xcconfig */,
+				DCE98CE3E6EA0C171D037DC7 /* Pods-BechdelTest.release.xcconfig */,
+				687843C23AB56CA3C1D0B9FF /* Pods-BechdelTestTests.debug.xcconfig */,
+				1D8343328C70B17888221517 /* Pods-BechdelTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A7669A82501DA7A00A2A27E /* BechdelTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A7669C82501DA7C00A2A27E /* Build configuration list for PBXNativeTarget "BechdelTest" */;
+			buildPhases = (
+				2BA089B0CF2D40492AF88239 /* [CP] Check Pods Manifest.lock */,
+				2A7669A52501DA7A00A2A27E /* Sources */,
+				2A7669A62501DA7A00A2A27E /* Frameworks */,
+				2A7669A72501DA7A00A2A27E /* Resources */,
+				623D1EE06198E862DB2CB442 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BechdelTest;
+			productName = BechdelTest;
+			productReference = 2A7669A92501DA7A00A2A27E /* BechdelTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A7669BE2501DA7C00A2A27E /* BechdelTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A7669CB2501DA7C00A2A27E /* Build configuration list for PBXNativeTarget "BechdelTestTests" */;
+			buildPhases = (
+				6811F0F7340FA9EE78317790 /* [CP] Check Pods Manifest.lock */,
+				2A7669BB2501DA7C00A2A27E /* Sources */,
+				2A7669BC2501DA7C00A2A27E /* Frameworks */,
+				2A7669BD2501DA7C00A2A27E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A7669C12501DA7C00A2A27E /* PBXTargetDependency */,
+			);
+			name = BechdelTestTests;
+			productName = BechdelTestTests;
+			productReference = 2A7669BF2501DA7C00A2A27E /* BechdelTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A7669A12501DA7A00A2A27E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Ribeiro Ferreira";
+				TargetAttributes = {
+					2A7669A82501DA7A00A2A27E = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					2A7669BE2501DA7C00A2A27E = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 2A7669A82501DA7A00A2A27E;
+					};
+				};
+			};
+			buildConfigurationList = 2A7669A42501DA7A00A2A27E /* Build configuration list for PBXProject "BechdelTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A7669A02501DA7A00A2A27E;
+			productRefGroup = 2A7669AA2501DA7A00A2A27E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A7669A82501DA7A00A2A27E /* BechdelTest */,
+				2A7669BE2501DA7C00A2A27E /* BechdelTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A7669A72501DA7A00A2A27E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A7669B92501DA7C00A2A27E /* LaunchScreen.storyboard in Resources */,
+				2A7669E72501E40100A2A27E /* ListTableViewCell.xib in Resources */,
+				2A7669B62501DA7C00A2A27E /* Assets.xcassets in Resources */,
+				2A7669B42501DA7A00A2A27E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A7669BD2501DA7C00A2A27E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BA089B0CF2D40492AF88239 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BechdelTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		623D1EE06198E862DB2CB442 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BechdelTest/Pods-BechdelTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BechdelTest/Pods-BechdelTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BechdelTest/Pods-BechdelTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6811F0F7340FA9EE78317790 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BechdelTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A7669A52501DA7A00A2A27E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A7669E62501E40100A2A27E /* ListTableViewCell.swift in Sources */,
+				2A7669DC2501DEBA00A2A27E /* ListPresenter.swift in Sources */,
+				2A7669D42501DC6700A2A27E /* ListTableViewController.swift in Sources */,
+				2A7669DA2501DDDB00A2A27E /* Data.swift in Sources */,
+				2A7669D82501DD9C00A2A27E /* Cache.swift in Sources */,
+				2A7669AD2501DA7A00A2A27E /* AppDelegate.swift in Sources */,
+				2A7669EC2501FB9800A2A27E /* FilterViewController.swift in Sources */,
+				2A7669DE2501DEF800A2A27E /* ConnectErrors.swift in Sources */,
+				2A7669E02501DF0900A2A27E /* ServiceProtocol.swift in Sources */,
+				2A7669E22501DF2600A2A27E /* Service.swift in Sources */,
+				2A7669D62501DC8600A2A27E /* Movie.swift in Sources */,
+				2A7669AF2501DA7A00A2A27E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A7669BB2501DA7C00A2A27E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A7669C42501DA7C00A2A27E /* BechdelTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A7669C12501DA7C00A2A27E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A7669A82501DA7A00A2A27E /* BechdelTest */;
+			targetProxy = 2A7669C02501DA7C00A2A27E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A7669B22501DA7A00A2A27E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A7669B32501DA7A00A2A27E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A7669B72501DA7C00A2A27E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A7669B82501DA7C00A2A27E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A7669C62501DA7C00A2A27E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A7669C72501DA7C00A2A27E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A7669C92501DA7C00A2A27E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC29CB8868FD4C506B9ED47F /* Pods-BechdelTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7CS39R779;
+				INFOPLIST_FILE = BechdelTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gabrielferreira.BechdelTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2A7669CA2501DA7C00A2A27E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCE98CE3E6EA0C171D037DC7 /* Pods-BechdelTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7CS39R779;
+				INFOPLIST_FILE = BechdelTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gabrielferreira.BechdelTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2A7669CC2501DA7C00A2A27E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 687843C23AB56CA3C1D0B9FF /* Pods-BechdelTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7CS39R779;
+				INFOPLIST_FILE = BechdelTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gabrielferreira.BechdelTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BechdelTest.app/BechdelTest";
+			};
+			name = Debug;
+		};
+		2A7669CD2501DA7C00A2A27E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D8343328C70B17888221517 /* Pods-BechdelTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7CS39R779;
+				INFOPLIST_FILE = BechdelTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gabrielferreira.BechdelTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BechdelTest.app/BechdelTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A7669A42501DA7A00A2A27E /* Build configuration list for PBXProject "BechdelTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A7669C62501DA7C00A2A27E /* Debug */,
+				2A7669C72501DA7C00A2A27E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A7669C82501DA7C00A2A27E /* Build configuration list for PBXNativeTarget "BechdelTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A7669C92501DA7C00A2A27E /* Debug */,
+				2A7669CA2501DA7C00A2A27E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A7669CB2501DA7C00A2A27E /* Build configuration list for PBXNativeTarget "BechdelTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A7669CC2501DA7C00A2A27E /* Debug */,
+				2A7669CD2501DA7C00A2A27E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A7669A12501DA7A00A2A27E /* Project object */;
+}
