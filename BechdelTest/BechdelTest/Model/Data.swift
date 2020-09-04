@@ -12,3 +12,4 @@ let apiURL: String = "http://bechdeltest.com/api/v1/"
 var fromYear: Int?
 var toYear: Int?
 var rating: Int?
+var search: String?

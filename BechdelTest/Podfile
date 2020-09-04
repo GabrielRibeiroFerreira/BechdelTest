@@ -7,6 +7,7 @@ target 'BechdelTest' do
 
   # Pods for BechdelTest
   pod 'Alamofire', '~> 5.2'
+  pod 'HTMLString', '~> 5.0'
 
   target 'BechdelTestTests' do
     inherit! :search_paths

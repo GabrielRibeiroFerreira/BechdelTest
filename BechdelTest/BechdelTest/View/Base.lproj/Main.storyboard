@@ -40,24 +40,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVw-XK-wdd">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="iVw-XK-wdd">
                                 <rect key="frame" x="0.0" y="90" width="414" height="772"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhr-YV-vxl">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="588"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="630"/>
                                         <subviews>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qdb-Sf-tOC">
-                                                <rect key="frame" x="0.0" y="16" width="414" height="180"/>
+                                                <rect key="frame" x="0.0" y="58" width="414" height="180"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="180" id="EjF-c5-Zmp"/>
                                                 </constraints>
                                             </pickerView>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfu-L0-NRl">
-                                                <rect key="frame" x="0.0" y="204" width="414" height="180"/>
+                                                <rect key="frame" x="0.0" y="246" width="414" height="180"/>
                                             </pickerView>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuY-Pe-VEA">
-                                                <rect key="frame" x="0.0" y="392" width="414" height="180"/>
+                                                <rect key="frame" x="0.0" y="434" width="414" height="180"/>
                                             </pickerView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPN-NO-2S8">
+                                                <rect key="frame" x="8" y="16" width="398" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -69,8 +74,11 @@
                                             <constraint firstItem="rfu-L0-NRl" firstAttribute="height" secondItem="Qdb-Sf-tOC" secondAttribute="height" id="FsI-29-QRD"/>
                                             <constraint firstItem="rfu-L0-NRl" firstAttribute="top" secondItem="Qdb-Sf-tOC" secondAttribute="bottom" constant="8" id="VRG-1M-HRn"/>
                                             <constraint firstAttribute="trailing" secondItem="rfu-L0-NRl" secondAttribute="trailing" id="Xl4-Rm-K8Y"/>
-                                            <constraint firstItem="Qdb-Sf-tOC" firstAttribute="top" secondItem="Uhr-YV-vxl" secondAttribute="top" constant="16" id="d0J-sr-9bU"/>
+                                            <constraint firstAttribute="trailing" secondItem="OPN-NO-2S8" secondAttribute="trailing" constant="8" id="Zxl-eZ-W6D"/>
+                                            <constraint firstItem="Qdb-Sf-tOC" firstAttribute="top" secondItem="OPN-NO-2S8" secondAttribute="bottom" constant="8" id="d0J-sr-9bU"/>
                                             <constraint firstAttribute="trailing" secondItem="wuY-Pe-VEA" secondAttribute="trailing" id="djF-st-aYd"/>
+                                            <constraint firstItem="OPN-NO-2S8" firstAttribute="top" secondItem="Uhr-YV-vxl" secondAttribute="top" constant="16" id="fW4-8i-csz"/>
+                                            <constraint firstItem="OPN-NO-2S8" firstAttribute="leading" secondItem="Uhr-YV-vxl" secondAttribute="leading" constant="8" id="ffA-9F-HyT"/>
                                             <constraint firstItem="Qdb-Sf-tOC" firstAttribute="leading" secondItem="Uhr-YV-vxl" secondAttribute="leading" id="o1n-eb-mVm"/>
                                             <constraint firstItem="rfu-L0-NRl" firstAttribute="leading" secondItem="Uhr-YV-vxl" secondAttribute="leading" id="qfs-Ah-v4r"/>
                                         </constraints>
@@ -110,6 +118,7 @@
                     <connections>
                         <outlet property="fromPicker" destination="Qdb-Sf-tOC" id="BZh-tc-Sd6"/>
                         <outlet property="ratingPicker" destination="wuY-Pe-VEA" id="xQ8-ow-Vxf"/>
+                        <outlet property="searchField" destination="OPN-NO-2S8" id="bgw-zM-ZlU"/>
                         <outlet property="toPicker" destination="rfu-L0-NRl" id="TG7-S5-z98"/>
                     </connections>
                 </viewController>

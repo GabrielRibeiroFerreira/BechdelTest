@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import HTMLString
 
 class ListPresenter {
     typealias DataListCallBack = (_ dataList: [Movie]?, _ status: Bool, _ message: String) -> Void
@@ -24,7 +25,15 @@ class ListPresenter {
         self.service = Service()
     }
     
-    func getInYears(from: Int?, to: Int?, on list: [Movie], rating: Int?) -> [Movie] {
+    func getFiltered(list: [Movie], from: Int?, to: Int?, rating: Int?, name: String?) -> [Movie] {
+        var movies: [Movie] = self.getInYears(from: from, to: to, on: list)
+        movies = self.getBy(rating: rating, on: movies)
+        movies = self.getBy(name: name, on: movies)
+        
+        return movies
+    }
+    
+    func getInYears(from: Int?, to: Int?, on list: [Movie]) -> [Movie] {
         var movies: [Movie] = list
         
         if let f = from {
@@ -55,12 +64,40 @@ class ListPresenter {
             }
         }
         
+        return movies
+    }
+    
+    func getBy(rating: Int?, on list: [Movie]) -> [Movie] {
+        var movies: [Movie] = list
+        
         var remove: [Int] = []
         
         if let r = rating {
             for i in 0..<movies.count {
                 if let rating = movies[i].rating {
                     if rating != r  {
+                        remove.insert(i, at: 0)
+                    }
+                }
+            }
+        }
+        
+        for i in remove {
+            movies.remove(at: i)
+        }
+        
+        return movies
+    }
+    
+    func getBy(name: String?, on list: [Movie]) -> [Movie] {
+        var movies: [Movie] = list
+        
+        var remove: [Int] = []
+        
+        if let n = name?.lowercased() {
+            for i in 0..<movies.count {
+                if let title = movies[i].title?.lowercased() {
+                    if !title.contains(n) {
                         remove.insert(i, at: 0)
                     }
                 }
@@ -128,10 +165,12 @@ class ListPresenter {
                         print(message)
                         guard let self = self else {return}
                         let dataList: [Movie] = try JSONDecoder().decode([Movie].self, from: data)
-                        let list: [Movie] = dataList.sorted(by: {
+                        var list: [Movie] = dataList.sorted(by: {
                             guard let year0 = $0.year, let year1 = $1.year else { return false }
                             return year0 < year1
                         })
+                        
+                        list = self.correctTitleFrom(list: list)
                         
                         let movies = ListMovie()
                         movies.list = list
@@ -161,5 +200,13 @@ class ListPresenter {
         }catch{
             callBack(nil, false, error.localizedDescription)
         }
+    }
+    
+    func correctTitleFrom(list: [Movie]) -> [Movie] {
+        for movie in list {
+            movie.title = movie.title?.removingHTMLEntities
+        }
+        
+        return list
     }
 }

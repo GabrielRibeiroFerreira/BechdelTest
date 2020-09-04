@@ -29,7 +29,11 @@ class ListTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.list = self.presenter.getInYears(from: fromYear, to: toYear, on: self.completeList, rating: rating)
+        self.list = self.presenter.getFiltered(list: self.completeList,
+                                               from: fromYear,
+                                               to: toYear,
+                                               rating: rating,
+                                               name: search)
         self.tableView.reloadData()
     }
 
